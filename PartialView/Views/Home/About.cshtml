@@ -1,8 +1,2 @@
 ﻿<h1> About</h1>
-<h3>@ViewBag.Title</h3>
-<ul class="list">
-    @foreach (string item in ViewBag.ListItems)
-    {
-        <li>@item</li>
-    }
-</ul>
+<partial name="_ListPartialView" />
