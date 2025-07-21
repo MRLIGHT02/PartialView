@@ -27,5 +27,13 @@ namespace PartialView.Controllers
             return View(listModel);
 
         }
+        [Route("programming-languages")]
+        public IActionResult ProgrammingLanguages()
+        {
+
+            listModel.ListTitle = "Programming Languages";
+            listModel.ListItems = new List<string> { "C#", "Java", "Python", "JavaScript", "Ruby" };
+            return PartialView("_ListPartialView", listModel);
+        }
     }
 }

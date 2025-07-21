@@ -1,3 +1,16 @@
 ﻿<h1>Home</h1>
 
 <partial name="_ListPartialView" />
+
+<button class="button button-blue-back" type="button" id="programming-lang">Load Programming Language</button>
+<div class="box programming-lang-content">
+
+</div>
+<script>
+
+    document.querySelector("#programming-lang").addEventListener("click",async function () {
+      
+          var response = await fetch("programming-languages");
+          var language= response.text();
+    });
+</script>
