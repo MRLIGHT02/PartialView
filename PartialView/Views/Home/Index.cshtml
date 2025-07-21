@@ -6,8 +6,10 @@
 <div class="box programming-lang-content">
 
 </div>
+    
+    
 <script>
-
+        
     document.querySelector("#programming-lang").addEventListener("click",async function () {
       
           var response = await fetch("programming-languages");
@@ -15,3 +17,4 @@
           document.querySelector(".programming-lang-content").innerHTML = await language;
     });
 </script>
+    
