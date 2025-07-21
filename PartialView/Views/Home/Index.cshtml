@@ -12,5 +12,6 @@
       
           var response = await fetch("programming-languages");
           var language= response.text();
+          document.querySelector(".programming-lang-content").innerHTML = await language;
     });
 </script>
